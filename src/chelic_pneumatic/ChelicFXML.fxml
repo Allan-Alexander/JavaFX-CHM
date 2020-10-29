@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="757.0" prefWidth="1027.0" styleClass="parent" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chelic_pneumatic.ChelicFXMLController">
+    <stylesheets>
+        <URL value="@StyleSheet.css" />
+    </stylesheets>
+   <children>
+      <Pane fx:id="SidePane" prefHeight="630.0" prefWidth="295.0" style="-fx-background-color: #2a1f45;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="104.0" fitWidth="105.0" layoutX="-3.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Chelic_Images/Symbol.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="88.0" prefHeight="104.0" prefWidth="207.0" styleClass="heading" stylesheets="@StyleSheet.css" text="CHENNAI HYDRO&#10;MAATICS&#10;" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="104.0" prefHeight="518.0" prefWidth="295.0" style="-fx-background-color: #433169;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="104.0">
+         <children>
+            <JFXButton fx:id="Force_Btn" buttonType="RAISED" layoutY="35.0" onMouseClicked="#Frc_btn" prefHeight="51.0" prefWidth="295.0" text="Air Consumption" textFill="WHITE">
+               <font>
+                  <Font name="Corbel" size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="295.0" layoutY="104.0" prefHeight="87.0" prefWidth="733.0" style="-fx-background-color: #2a1f45;" AnchorPane.leftAnchor="294.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="104.0">
+         <children>
+            <Label layoutX="6.0" layoutY="-7.0" prefHeight="96.0" prefWidth="721.0" text=" Cylinder Air Consumption" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <ImageView fitHeight="96.0" fitWidth="482.0" layoutX="295.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="295.0" AnchorPane.topAnchor="-2.0">
+         <image>
+            <Image url="@title.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="A1_txt" focusColor="RED" labelFloat="true" layoutX="339.0" layoutY="279.0" prefHeight="25.0" prefWidth="243.0" promptText="A1 - Piston Area in cm² " unFocusColor="BLACK" />
+      <JFXTextField fx:id="A2_txt" focusColor="RED" labelFloat="true" layoutX="339.0" layoutY="329.0" prefHeight="25.0" prefWidth="243.0" promptText="A2 - Piston Area in cm² " unFocusColor="BLACK" />
+      <JFXTextField fx:id="A3_txt" focusColor="RED" labelFloat="true" layoutX="339.0" layoutY="383.0" prefHeight="25.0" prefWidth="243.0" promptText="A3 - Inside Diameter of Piping in cm² " unFocusColor="BLACK" />
+      <Label alignment="CENTER" layoutX="339.0" layoutY="210.0" prefHeight="33.0" prefWidth="306.0" style="-fx-border-radius: 20;" styleClass="sub_heading" stylesheets="@StyleSheet.css" text="Air flow and consumption" textFill="WHITE">
+         <font>
+            <Font name="Futura-Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="339.0" layoutY="483.0" prefHeight="33.0" prefWidth="306.0" style="-fx-border-radius: 20;" styleClass="sub_heading" stylesheets="@StyleSheet.css" text="Result" textFill="WHITE">
+         <font>
+            <Font name="Futura-Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="532.0" prefHeight="21.0" prefWidth="359.0" text="Air Consumption of cylinder movement/time in L/min">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="564.0" text="Qₐ (L/min) : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="334.0" layoutY="598.0" prefHeight="21.0" prefWidth="359.0" text="Air consumption in piping in L/min">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="628.0" text="Qᵦ (L/min) : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="334.0" layoutY="665.0" prefHeight="21.0" prefWidth="359.0" text="Air consumption in cylinder movement / time in L/min">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="693.0" text="Qₙ (L/min) : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="L_txt" focusColor="RED" labelFloat="true" layoutX="645.0" layoutY="279.0" prefHeight="25.0" prefWidth="243.0" promptText=" L - Stroke of Cylinder in cm" unFocusColor="BLACK" />
+      <JFXTextField fx:id="Lh_txt" focusColor="RED" labelFloat="true" layoutX="645.0" layoutY="329.0" prefHeight="25.0" prefWidth="243.0" promptText="Lₕ - Piping Length in cm" unFocusColor="BLACK" />
+      <JFXTextField fx:id="P_txt" focusColor="RED" labelFloat="true" layoutX="645.0" layoutY="383.0" prefHeight="25.0" prefWidth="243.0" promptText=" P - Operation Pressure in kgf/cm²" unFocusColor="BLACK" />
+      <JFXTextField fx:id="n_txt" focusColor="RED" labelFloat="true" layoutX="645.0" layoutY="431.0" prefHeight="25.0" prefWidth="243.0" promptText=" n - Operating Frequency" unFocusColor="BLACK" />
+      <Label fx:id="Qa_txt" layoutX="443.0" layoutY="567.0" prefHeight="21.0" prefWidth="190.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Qb_txt" layoutX="434.0" layoutY="631.0" prefHeight="21.0" prefWidth="196.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Qn_txt" layoutX="437.0" layoutY="696.0" prefHeight="21.0" prefWidth="196.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="339.0" layoutY="427.0" onMouseClicked="#submit_clicked" prefHeight="33.0" prefWidth="105.0" styleClass="submit_btn" stylesheets="@StyleSheet.css" text="Submit">
+         <font>
+            <Font name="Corbel" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Clear_btn" buttonType="RAISED" layoutX="466.0" layoutY="427.0" onMouseClicked="#clear_btn" prefHeight="33.0" prefWidth="105.0" styleClass="submit_btn" stylesheets="@StyleSheet.css" text="Clear">
+         <font>
+            <Font name="Corbel" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="641.0" layoutY="564.0" text="Qₐ (L/sec) : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Qa_txt1" layoutX="742.0" layoutY="567.0" prefHeight="21.0" prefWidth="207.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="641.0" layoutY="628.0" text="Qᵦ (L/sec) : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Qb_txt1" layoutX="742.0" layoutY="631.0" prefHeight="21.0" prefWidth="207.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="641.0" layoutY="693.0" text="Qₙ (L/sec) : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Qn_txt1" layoutX="747.0" layoutY="696.0" prefHeight="21.0" prefWidth="207.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

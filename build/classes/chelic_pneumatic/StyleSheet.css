@@ -1,0 +1,18 @@
+.parent{
+    -fx-background-color: #FFFFFF;
+}
+.redcircle{
+    -fx-fill:#db251b ;
+}
+.redcircle:hover{
+    -fx-fill: #ff0000;
+}
+.sub_heading{
+    -fx-background-color: linear-gradient(to bottom left,#923CB5,#000000);
+    -fx-background-radius: 30px;
+}
+.submit_btn{
+    -fx-background-color: linear-gradient(to bottom left,#55EFC4,#000000);
+    -fx-background-radius: 30px;
+    -fx-text-fill: #FFFFFF;
+}
